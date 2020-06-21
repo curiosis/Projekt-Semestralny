@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\diet.png" />
+    <None Remove="Images\github.png" />
+    <None Remove="Images\ingredients.png" />
+    <None Remove="Images\login.png" />
+    <None Remove="Images\meals.png" />
+    <None Remove="Images\settings.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\diet.png" />
+    <Resource Include="Images\github.png" />
+    <Resource Include="Images\ingredients.png" />
+    <Resource Include="Images\login.png" />
+    <Resource Include="Images\meals.png" />
+    <Resource Include="Images\settings.png" />
+  </ItemGroup>
+
+</Project>
