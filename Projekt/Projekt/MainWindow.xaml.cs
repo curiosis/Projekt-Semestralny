@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Projekt.Pages;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,33 @@ namespace Projekt
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private List<Object> PageList = new List<Object>();
+
+        private void Back_button_Click(object sender, RoutedEventArgs e)
+        {
+            if (PageList.Count > 1)
+            {
+                PageList.Remove(Main.Content);
+                Main.Content = PageList.ElementAt(PageList.Count - 1);
+                
+                label.Content = PageList.Count;
+            }
+        }
+
+        private void Login_button_Click(object sender, RoutedEventArgs e)
+        {
+            PageList.Add(Main.Content);
+            Main.Content = new LoginPage();
+            label.Content = PageList.Count;
+        }
+
+        private void Ingredients_button_Click(object sender, RoutedEventArgs e)
+        {
+            PageList.Add(Main.Content);
+            Main.Content = new IngredientsPage();
+            label.Content = PageList.Count;
         }
     }
 }

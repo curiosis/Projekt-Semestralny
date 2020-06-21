@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Images\back.png" />
     <None Remove="Images\diet.png" />
     <None Remove="Images\github.png" />
     <None Remove="Images\ingredients.png" />
@@ -16,6 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Images\back.png" />
     <Resource Include="Images\diet.png" />
     <Resource Include="Images\github.png" />
     <Resource Include="Images\ingredients.png" />

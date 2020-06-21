@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Projekt"
         mc:Ignorable="d"
         Title="MainWindow"
-        Height="700"
+        Height="800"
         Width="1000"
         ResizeMode="NoResize"
         WindowStyle="None"
@@ -22,11 +22,28 @@
                         Margin="0"
                         Background="Bisque">
 
+                <!-- Back Button -->
+                <Button x:Name="Back_button"
+                        BorderBrush="Transparent"
+                        Background="Transparent"
+                        Margin="16"
+                        Click="Back_button_Click">
+                    <StackPanel>
+                        <Image  Source="Images/back.png"
+                                Stretch="None"/>
+                        <TextBlock  x:Name="Back_textblock"
+                                    Text="Wstecz"
+                                    HorizontalAlignment="Center"
+                                    FontSize="20"/>
+                    </StackPanel>
+                </Button>
+
                 <!-- Login Button -->
                 <Button x:Name="Login_button"
                         BorderBrush="Transparent"
                         Background="Transparent"
-                        Margin="16">
+                        Margin="16"
+                        Click="Login_button_Click">
                     <StackPanel>
                         <Image  Source="Images/login.png"
                                 Stretch="None"/>
@@ -41,7 +58,8 @@
                 <Button x:Name="Ingredients_button"
                         BorderBrush="Transparent"
                         Background="Transparent"
-                        Margin="16">
+                        Margin="16"
+                        Click="Ingredients_button_Click">
                     <StackPanel>
                         <Image  Source="Images/ingredients.png"
                                 Stretch="None"/>
@@ -110,9 +128,20 @@
 
         </Grid>
 
+        <Grid HorizontalAlignment="Right"
+              VerticalAlignment="Bottom"
+              Height="750"
+              Width="820">
+
+            <Frame x:Name="Main"
+                   NavigationUIVisibility="Hidden"/>
+
+        </Grid>
+        
         <!-- Right Menu Bar -->
         <Grid HorizontalAlignment="Right"
-              VerticalAlignment="Top">
+              VerticalAlignment="Top"
+              Height="50">
 
             <StackPanel Orientation="Horizontal"
                         Margin="0">
@@ -136,6 +165,11 @@
             </StackPanel>
 
         </Grid>
+        <Label x:Name="label"
+               Content=""
+               HorizontalAlignment="Left"
+               Margin="590,10,0,0"
+               VerticalAlignment="Top"/>
 
     </Grid>
     
