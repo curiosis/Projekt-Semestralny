@@ -24,7 +24,7 @@ namespace Projekt
 
         private void Next_button_Click(object sender, RoutedEventArgs e)
         {
-            
+
         }
     }
 }

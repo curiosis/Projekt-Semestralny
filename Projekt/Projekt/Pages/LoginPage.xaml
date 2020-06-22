@@ -92,6 +92,7 @@
 
                 <Button BorderBrush="Transparent"
                         Background="Transparent"
+                        HorizontalAlignment="Center"
                         BorderThickness="0"
                         Padding="0"
                         Content="Utwórz konto!"
