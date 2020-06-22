@@ -16,9 +16,6 @@ using System.Windows.Shapes;
 
 namespace Projekt
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
         public MainWindow()
@@ -68,10 +65,14 @@ namespace Projekt
 
         #endregion
 
+        #region Moving window
+
         private void Window_MouseDown(object sender, MouseButtonEventArgs e)
         {
             if (Mouse.LeftButton == MouseButtonState.Pressed)
                 this.DragMove();
         }
+
+        #endregion
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Projekt.Pages;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
@@ -11,16 +12,19 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+
 namespace Projekt
 {
-    /// <summary>
-    /// Logika interakcji dla klasy LoginPage.xaml
-    /// </summary>
     public partial class LoginPage : Page
     {
         public LoginPage()
         {
             InitializeComponent();
+        }
+
+        private void Next_button_Click(object sender, RoutedEventArgs e)
+        {
+            
         }
     }
 }

@@ -5,10 +5,123 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Projekt"
       mc:Ignorable="d" 
-      d:DesignHeight="750" d:DesignWidth="820"
-      Title="LoginPage">
+      d:DesignHeight="750"
+      d:DesignWidth="820"
+      Title="LoginPage"
+      Background="White">
 
     <Grid>
-        <TextBlock Text="LOGIN" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" FontWeight="Bold"/>
+
+        <StackPanel Width="600"
+                    Height="650"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center"
+                    Orientation="Horizontal">
+
+            <StackPanel Width="500">
+
+                <TextBlock x:Name="LoginTitle_textblock" 
+                           Text="Zaloguj się"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Center"
+                           FontSize="60"/>
+
+                <Image Source="/Images/big_avatar.png"
+                       Stretch="None"
+                       Margin="0,40,0,40"/>
+
+                <!-- Login -->
+                <StackPanel Width="300">
+
+                    <TextBlock Text="Login"
+                               VerticalAlignment="Center"
+                               FontSize="35"/>
+
+                    <StackPanel Orientation="Horizontal"
+                                Margin="0,10,0,0">
+
+                        <TextBox x:Name="Login_textbox"
+                                 Padding="10"
+                                 Text="jkowalski90"
+                                 FontSize="25"
+                                 Width="250"
+                                 VerticalAlignment="Center"
+                                 BorderThickness="0"
+                                 Foreground="#777777"
+                                 Background="Transparent"/>
+
+                        <Image Source="/Images/avatar.png"
+                               Stretch="None"/>
+
+                    </StackPanel>
+
+                    <Border BorderBrush="Black"
+                            BorderThickness="0.5"/>
+
+                </StackPanel>
+
+                <!-- Password -->
+                <StackPanel Width="300"
+                            Margin="0,50,0,0">
+
+                    <TextBlock Text="Hasło"
+                           VerticalAlignment="Center"
+                           FontSize="35"/>
+
+                    <StackPanel Orientation="Horizontal"
+                                Margin="0,10,0,0">
+
+                        <PasswordBox x:Name="Password_textbox"
+                                     Padding="10"
+                                     FontSize="25"
+                                     Width="250"
+                                     VerticalAlignment="Center"
+                                     BorderThickness="0"
+                                     Foreground="#777777"
+                                     Background="Transparent"/>
+
+                        <Image Source="/Images/lock.png"
+                               Stretch="None"/>
+
+                    </StackPanel>
+
+                    <Border BorderBrush="Black"
+                            BorderThickness="0.5"/>
+
+                </StackPanel>
+
+                <Button BorderBrush="Transparent"
+                        Background="Transparent"
+                        BorderThickness="0"
+                        Padding="0"
+                        Content="Utwórz konto!"
+                        FontSize="30"
+                        Foreground="#66757F"
+                        Margin="0,50,0,0"/>
+
+            </StackPanel>
+
+            <!-- Next button -->
+            <StackPanel Width="100"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center">
+
+                <Button x:Name="Next_button"
+                        BorderBrush="Transparent"
+                        Background="Transparent"
+                        Margin="16"
+                        Click="Next_button_Click"
+                        Padding="0">
+
+                    <Image  Source="/Images/next.png"
+                            Stretch="None"/>
+
+                </Button>
+
+            </StackPanel>
+
+        </StackPanel>
+        
     </Grid>
+    
 </Page>
