@@ -24,9 +24,12 @@ namespace Projekt
         public MainWindow()
         {
             InitializeComponent();
+            MouseDown += Window_MouseDown;
         }
 
         private List<Object> PageList = new List<Object>();
+
+        #region Buttons
 
         private void Back_button_Click(object sender, RoutedEventArgs e)
         {
@@ -51,6 +54,24 @@ namespace Projekt
             PageList.Add(Main.Content);
             Main.Content = new IngredientsPage();
             label.Content = PageList.Count;
+        }
+
+        private void Exit_button_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
+
+        private void Minimize_button_Click(object sender, RoutedEventArgs e)
+        {
+            WindowState = WindowState.Minimized;
+        }
+
+        #endregion
+
+        private void Window_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (Mouse.LeftButton == MouseButtonState.Pressed)
+                this.DragMove();
         }
     }
 }

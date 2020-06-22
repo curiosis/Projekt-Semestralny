@@ -152,7 +152,7 @@
                         Background="Transparent"
                         Margin="5"
                         Content="➖"
-                        FontSize="30"/>
+                        FontSize="30" Click="Minimize_button_Click"/>
 
                 <!-- Exit Button -->
                 <Button x:Name="Exit_button"
@@ -160,7 +160,7 @@
                         Background="Transparent"
                         Margin="5"
                         Content="❌"
-                        FontSize="30"/>
+                        FontSize="30" Click="Exit_button_Click"/>
 
             </StackPanel>
 
