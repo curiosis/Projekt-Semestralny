@@ -24,7 +24,15 @@ namespace Projekt
 
         private void Next_button_Click(object sender, RoutedEventArgs e)
         {
+            // zmienić na główną stronę, ale ona jeszcze nie istnieje xd
+            IngredientsPage Page2 = new IngredientsPage();
+            NavigationService.Navigate(Page2);
+        }
 
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            RegisterPage registerPage = new RegisterPage();
+            NavigationService.Navigate(registerPage);
         }
     }
 }

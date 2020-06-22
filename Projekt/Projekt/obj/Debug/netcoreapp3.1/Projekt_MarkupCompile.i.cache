@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1
 C:\Users\donda\Desktop\Projekt-Semestralny\Projekt\Projekt\App.xaml
-3-721855527
+6-967085026
 
-6-2050599270
+91264189240
 1921654412462
-MainWindow.xaml;Pages\IngredientsPage.xaml;Pages\LoginPage.xaml;
+MainWindow.xaml;Pages\IngredientsPage.xaml;Pages\LoginPage.xaml;Pages\MealsPage.xaml;Pages\RegisterPage.xaml;Pages\SettingsPage.xaml;
 
-False
+True
 

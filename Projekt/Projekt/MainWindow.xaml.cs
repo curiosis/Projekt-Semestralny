@@ -53,6 +53,30 @@ namespace Projekt
             label.Content = PageList.Count;
         }
 
+        private void Meals_button_Click(object sender, RoutedEventArgs e)
+        {
+            PageList.Add(Main.Content);
+            Main.Content = new MealsPage();
+            label.Content = PageList.Count;
+        }
+
+        private void Diet_button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Settings_button_Click(object sender, RoutedEventArgs e)
+        {
+            PageList.Add(Main.Content);
+            Main.Content = new SettingsPage();
+            label.Content = PageList.Count;
+        }
+
+        private void GitHub_button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
         private void Exit_button_Click(object sender, RoutedEventArgs e)
         {
             Close();
@@ -74,5 +98,6 @@ namespace Projekt
         }
 
         #endregion
+
     }
 }

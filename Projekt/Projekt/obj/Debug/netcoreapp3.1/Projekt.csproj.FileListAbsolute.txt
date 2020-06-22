@@ -21,3 +21,9 @@ C:\Users\donda\Desktop\Projekt-Semestralny\Projekt\Projekt\obj\Debug\netcoreapp3
 C:\Users\donda\Desktop\Projekt-Semestralny\Projekt\Projekt\obj\Debug\netcoreapp3.1\Pages\LoginPage.baml
 C:\Users\donda\Desktop\Projekt-Semestralny\Projekt\Projekt\obj\Debug\netcoreapp3.1\Pages\IngredientsPage.g.cs
 C:\Users\donda\Desktop\Projekt-Semestralny\Projekt\Projekt\obj\Debug\netcoreapp3.1\Pages\IngredientsPage.baml
+C:\Users\donda\Desktop\Projekt-Semestralny\Projekt\Projekt\obj\Debug\netcoreapp3.1\Pages\RegisterPage.g.cs
+C:\Users\donda\Desktop\Projekt-Semestralny\Projekt\Projekt\obj\Debug\netcoreapp3.1\Pages\RegisterPage.baml
+C:\Users\donda\Desktop\Projekt-Semestralny\Projekt\Projekt\obj\Debug\netcoreapp3.1\Pages\SettingsPage.g.cs
+C:\Users\donda\Desktop\Projekt-Semestralny\Projekt\Projekt\obj\Debug\netcoreapp3.1\Pages\SettingsPage.baml
+C:\Users\donda\Desktop\Projekt-Semestralny\Projekt\Projekt\obj\Debug\netcoreapp3.1\Pages\MealsPage.g.cs
+C:\Users\donda\Desktop\Projekt-Semestralny\Projekt\Projekt\obj\Debug\netcoreapp3.1\Pages\MealsPage.baml
